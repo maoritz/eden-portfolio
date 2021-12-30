@@ -1,16 +1,23 @@
 
 //date display
 
-function responsiveMenu(){
+(function responsiveMenu(){
     const toggleButton = document.getElementsByClassName("toggle-button")[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
     
     toggleButton.addEventListener('click' ,() => {
         navbarLinks.classList.toggle('active')
     })
-}
+}())
 
-responsiveMenu()
+(function preventMenuScrollToTop(){
+  const toggleButton = document.getElementsByClassName("toggle-button")[0]
+  toggleButton.addEventListener('click', function (e) {
+    e.preventDefault();
+  })
+}())
+
+
 
 
 const today = new Date();
