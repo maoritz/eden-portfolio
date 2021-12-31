@@ -111,7 +111,7 @@ header {
       rgba(255, 255, 255, 0),
       rgba(26, 188, 156, 0.342)
     ),
-    url(../images/eden-surf.jpg);
+    url(/images/hero_background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -192,7 +192,7 @@ header {
 /* ABOUT ME */
 /* ----------------------------------------------- */
 .eden-image {
-  background-image: url("../images/me.jpg");
+  background-image: url("/images/me.jpg");
   background-size: cover;
   background-position: center;
 }
